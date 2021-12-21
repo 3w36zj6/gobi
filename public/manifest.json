@@ -1,13 +1,8 @@
 {
   "manifest_version": 3,
 
-  "name": "Chrome Extension TypeScript Starter",
-  "description": "Chrome Extension, TypeScript, Visual Studio Code",
+  "name": "語尾チェンジャー",
   "version": "1.0",
-
-  "options_ui": {
-    "page": "options.html"
-  },
 
   "action": {
     "default_icon": "icon.png",
@@ -21,15 +16,17 @@
       }
   ],
 
-  "background": {
-    "service_worker": "js/background.js"
-  },
-
   "permissions": [
     "storage"
   ],
 
   "host_permissions": [
     "<all_urls>"
+  ],
+
+  "web_accessible_resources": [
+    "dict/*"
   ]
+
+
 }
