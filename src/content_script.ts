@@ -7,12 +7,12 @@ const replaceDocument = (gobi: string) => {
     if (error) {
       console.log(error)
     } else {
-      var elementsInsideBody = [...document.body.getElementsByTagName("*")]
+      const elementsInsideBody = [...document.body.getElementsByTagName("*")]
 
       elementsInsideBody.forEach(element => {
         element.childNodes.forEach(child => {
           if (child.nodeType === 3) {
-            let value = child.nodeValue
+            const value = child.nodeValue
             let value_new = ""
             const tokens = tokenizer.tokenize(value!)
 
