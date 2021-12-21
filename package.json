@@ -1,7 +1,6 @@
 {
-  "name": "chrome-extension-typescript-starter",
+  "name": "gobi-applier",
   "version": "1.0.0",
-  "description": "chrome-extension-typescript-starter",
   "main": "index.js",
   "scripts": {
     "watch": "webpack --config webpack/webpack.dev.js --watch",
@@ -14,7 +13,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chibat/chrome-extension-typescript-starter.git"
+    "url": "https://github.com/3w36zj6/gobi-applier.git"
   },
   "dependencies": {
     "path-browserify": "^1.0.1",
