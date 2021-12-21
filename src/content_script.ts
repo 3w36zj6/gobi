@@ -20,13 +20,9 @@ const replaceDocument = (gobi: string) => {
             for (let i = 0; i < tokens.length; i++) {
               const token = tokens[i]
               const token_next = tokens[i + 1]
-              if ((["形容詞", "名詞", "感動詞"].includes(token.pos)) && ((token_next == undefined) || (token_next.pos == "記号"))) {
+              if ((["形容詞", "名詞", "感動詞", "助動詞"].includes(token.pos)) && ((token_next == undefined) || (token_next.pos == "記号"))) {
                 value_new += token.surface_form + gobi
-              }
-              else if ((token.pos == "助動詞") && ((token_next == undefined) || (token_next.pos == "記号"))) {
-                value_new += token.surface_form + gobi
-              }
-              else {
+              } else {
                 value_new += token.surface_form
               }
             }
