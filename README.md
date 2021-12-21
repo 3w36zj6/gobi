@@ -1,7 +1,5 @@
 # 語尾チェンジャー
 
-![build](https://github.com/chibat/chrome-extension-typescript-starter/workflows/build/badge.svg)
-
 Webページ内の文章に語尾を追加するChrome Extension
 
 ## Prerequisites
