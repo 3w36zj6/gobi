@@ -32,11 +32,10 @@ const replaceDocument = (gobi: string) => {
       })
     }
   })
-
 }
 
 chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
   if (msg.gobi) {
     replaceDocument(msg.gobi)
   }
-});
+})
