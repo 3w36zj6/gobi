@@ -7,12 +7,12 @@ const replaceDocument = (gobi: string) => {
     if (error) {
       console.log(error)
     } else {
-      var elementsInsideBody = [...document.body.getElementsByTagName('*')];
+      var elementsInsideBody = [...document.body.getElementsByTagName("*")]
 
       elementsInsideBody.forEach(element => {
         element.childNodes.forEach(child => {
           if (child.nodeType === 3) {
-            let value = child.nodeValue;
+            let value = child.nodeValue
             let value_new = ""
             const tokens = tokenizer.tokenize(value!)
 
@@ -26,10 +26,10 @@ const replaceDocument = (gobi: string) => {
                 value_new += token.surface_form
               }
             }
-            child.nodeValue = value_new;
+            child.nodeValue = value_new
           }
-        });
-      });
+        })
+      })
     }
   })
 

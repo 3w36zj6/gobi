@@ -10,14 +10,14 @@ const Popup = () => {
         gobi: "にゃ",
       },
       (value) => {
-        setStr(value.gobi);
+        setStr(value.gobi)
       }
-    );
-  }, []);
+    )
+  }, [])
 
   const changeGobi = () => {
     const gobi = (document.getElementById("gobi") as HTMLInputElement).value
-    chrome.storage.local.set({ "gobi": gobi }, function () { });
+    chrome.storage.local.set({ "gobi": gobi }, function () { })
 
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
       const tab = tabs[0]
