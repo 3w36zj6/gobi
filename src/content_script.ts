@@ -24,6 +24,8 @@ const replaceDocument = (gobi: string) => {
                 value_new += token.surface_form + gobi
               } else if ((token.pos == "動詞") && (token.conjugated_form == "基本形") && ((token_next == undefined) || (token_next.pos == "記号"))) {
                 value_new += token.surface_form + gobi
+              } else if ((token.pos == "動詞") && (~token.conjugated_form.indexOf("命令")) && ((token_next == undefined) || (token_next.pos == "記号"))) {
+                value_new += token.surface_form + gobi
               } else {
                 value_new += token.surface_form
               }
