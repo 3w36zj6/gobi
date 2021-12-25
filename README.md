@@ -1,6 +1,6 @@
 # 語尾チェンジャー
 
-Webページ内の文章に語尾を追加するChrome Extension
+Webページ内の文章にキャラ語尾を追加するChrome Extension
 
 ## Prerequisites
 
