@@ -1,6 +1,8 @@
 # 語尾チェンジャー
 
-Webページ内の文章にキャラ語尾を追加するChrome Extension
+Webページの文章に任意のキャラ語尾を追加するChrome Extension
+
+![image](https://user-images.githubusercontent.com/52315048/163825678-40f43e4b-c1d3-4426-bc72-a076e8cb81f5.png)
 
 ## Prerequisites
 
@@ -13,20 +15,14 @@ Webページ内の文章にキャラ語尾を追加するChrome Extension
 
 ## Project Structure
 
-* src/typescript: TypeScript source files
-* src/assets: static files
-* dist: Chrome Extension directory
-* dist/js: Generated JavaScript files
+* `src/`: TypeScript source directory
+* `dist/`: Chrome Extension directory
 
 ## Setup
 
 ```
 npm install
 ```
-
-## Import as Visual Studio Code project
-
-...
 
 ## Build
 
@@ -36,7 +32,7 @@ npm run build
 
 ## Build in watch mode
 
-### terminal
+### Terminal
 
 ```
 npm run watch
@@ -52,5 +48,3 @@ type `Ctrl + Shift + B`
 
 Load `dist` directory
 
-## Test
-`npx jest` or `npm run test`
